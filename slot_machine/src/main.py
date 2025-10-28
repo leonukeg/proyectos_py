@@ -16,3 +16,7 @@ pseudocodigo del flujo principal
     5.2- terminar programa
     
 """
+
+def main():
+    """Controla el flujo principal del juego"""
+    pass
