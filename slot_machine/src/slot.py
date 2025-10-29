@@ -1,6 +1,9 @@
+import random
+
 def spin():
     """Gira los tres carretes y devuelve una lista con los resultados"""
-    pass
+    symbolos = ["🍒", "🍋", "🍉", "⭐", "🧡", "7️⃣", "💎"]
+    return [random.choice(symbolos) for _ in range(3 )]   
 
 
 def calculate_prize(resultado):
