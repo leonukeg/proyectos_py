@@ -11,4 +11,5 @@ paso 3.
 paso 4. 
     se diseña la interfaz de las funciones del programa, es de ir se declara y definan las funciones (vacías) de cada archivo para saber qué harán y como lo harán y que devolveran, se escriben con un comentario interno para indicar para que sirve cada función.
     
-   
+paso 5. Implementación modular mínima (empezar a darle vida real al código)
+    haz una funcion la mas facil primero de la que sea que puedas probar y ejecutar de esta forma ya comienzas a hacer cocitas de codigo 
