@@ -1,8 +1,17 @@
 import random 
 
-#genero tres numero aleatoreos
-def number():
+def number_aleatory():
+    """genera un número aleatorio entre 0 y 9 incluidos"""
     return random.randint(0,9)
+
+def reult(n1,n2,n3):
+    """"determina el resultado del juego basado en tres números"""
+    if n1== n2==n3:
+        return "Win", 2
+    elsif n1== n2 or n2==n3 or n1 == n3:
+        return "Draw", 1
+    else:
+        return "Lost", 0
 
 number1, number2, number3  = number(), number(), number()
 
