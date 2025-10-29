@@ -17,7 +17,6 @@ pseudocodigo del flujo principal
     
 """
 
-
 def main():
-    """Controla el Fulujo principal del juego."""
+    """Controla el flujo principal del juego"""
     pass
