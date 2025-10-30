@@ -16,7 +16,7 @@ def spin():
     symbolos = ["🍒", "🍋", "🍉", "⭐", "🧡",  "7️⃣", "💎"]
     return [random.choice(symbolos) for _ in range(3)]   
 
-def calculate_prize(bet=1):
+def calculate_prize(resultado, bet=1):
     """Calcula el premio segun los simbolos obtenidos."""
     """
     Recibe:
@@ -25,8 +25,7 @@ def calculate_prize(bet=1):
     Devuelve:
         - ganancia (número), puede ser 0, puede ser igual a bet_amount, o múltiplos
     """
-    resultado = spin()
-
+    
     #para saber cuantos iguales hay en mi spin: 
     # -1 = 3 iguales; 
     # -2 = 2 iguales; 
@@ -35,17 +34,20 @@ def calculate_prize(bet=1):
     igualdad = len(set(resultado)) 
     
     if igualdad ==  3:
-        premio = bet * 0
+        premio = 0
     elif igualdad == 2:
         premio = bet
     elif igualdad == 1:
         simbolo = resultado[0]
         multiplicador = multipliers[simbolo]   
         premio = bet * multiplicador
-        
-    print(resultado)
-    print(f"tu apuesta fue {bet}, y tu resultado fue {premio}")
+    
+    print("🎰 Resultado:", " | ".join(resultado))
+    print(f"💰 Apostaste {bet}€ → Ganaste {premio}€")
+    
+    return premio
 
 
+tirada = spin()
 
-print(calculate_prize(5))
+calculate_prize(tirada,3)
