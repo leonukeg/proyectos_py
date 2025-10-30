@@ -13,3 +13,5 @@ paso 4.
     
 paso 5. Implementación modular mínima (empezar a darle vida real al código)
     haz una funcion la mas facil primero de la que sea que puedas probar y ejecutar de esta forma ya comienzas a hacer cocitas de codigo 
+
+paso 6. conectar esa función con la siguiente capa de lógica es decir empezar a conectar las   funciones y a darle logica al proyeto 
