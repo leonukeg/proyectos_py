@@ -17,6 +17,21 @@ pseudocodigo del flujo principal
     
 """
 
+"""
+reglas del juego 
+tirada = 3 simbolos
+-0 iguales = PIERDE multiplicador por 0 
+-2 iguales = EMPATE multiplicador por 1 
+-3 iguales = GANA multiplicador 
+    🍒 = x2
+    🍋 = x3
+    🍉 = x4
+    ⭐ = x5
+    🧡 = x6
+    7️⃣ = x7
+    💎 = x8 (premio máximo)
+"""
+
 def main():
     """Controla el flujo principal del juego"""
     pass
